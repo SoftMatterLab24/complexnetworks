@@ -5,7 +5,7 @@ function  [Idx] = buildPairlist(atoms,DomainBoundaries,Rcut)
     CoordsA = [atoms(:,6) atoms(:,7)];
     CoordsB = [atoms(:,6) atoms(:,7)];
 
-    [a,b] = size(CoordsB);
+    [a,~] = size(CoordsB);
 
 
     % needed if periodic BC (flat)
